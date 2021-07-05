@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="question">2+2=4?</string>
+    <string name="question1">Москва - столица России?</string>
+    <string name="question2">"Бородино" написал Кутузов?"</string>
+    <string name="question3">10+2*3=17?</string>
+    <string name="question4">Александра Сергеевича Пушкина зовут Александр?</string>
+    <string name="question5">Черное море - самое мелкое в мире?</string>
+    <string name="question6">0*1=0?</string>
+    <string name="question8">В библиотеке нужно читать?</string>
+    <string name="question9">Красная Шапочка шла к дедушке?</string>
+    <string name="question7">Кашпо - это вид шарфа?</string>
+    <string name="yes_btn">Да</string>
+    <string name="no_btn">Нет</string>
+    <string name="correct">Верно!</string>
+    <string name="incorrect">Неверно :c</string>
+    <string name="showAnswer">Показать ответ</string>
+</resources>
