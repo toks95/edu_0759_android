@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         private TextView questionTextView;
         private Button showAnswer;
 
-        private Question[] questions = {
+        private final Question[] questions = {
                 new Question(R.string.question, true),
                 new Question(R.string.question1, true),
                 new Question(R.string.question2, false),
@@ -33,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
                 new Question(R.string.question9, false),
         };
 
-        private  ArrayList <String> questionAnswers = new ArrayList<>();
+        private final ArrayList <String> questionAnswers = new ArrayList<>();
         private int correctAnswer = 0;
         private int questionIndex = 0;
 
         private  void checkIndex (String userAnswer){
-                questionAnswers.add(String.format("%s - ваш ответ %s", (String) questionTextView.getText(), userAnswer));
+                questionAnswers.add(String.format("%s - вы ответили: %s", (String) questionTextView.getText(), userAnswer));
                 if (questionIndex == questions.length - 1){
                         Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                         intent.putExtra("userQuestionsAnswers", questionAnswers);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                                 checkAnswer(questions[questionIndex].isAnswer());
-                                checkIndex("ДА");
+                                checkIndex("Да");
                         }
                 });
 
